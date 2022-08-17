@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.theme-light {
+  --bg-primary-color: hsl(0, 0%, 100%);
+  --bg-secondary-color: hsl(240, 9%, 89%);
+  --button-select-color: hsl(194, 97%, 31%); 
+  --number-color: hsl(240, 6%, 21%);
+
+  --svg-path-color: hsla(240, 6%, 21%, 1);
+  --svg-path-select-color: #ffffff;
+
+  --cs-primary: #b3b3b7;
+  --cs-secondary: #ffffff;
+
+  --cs-select-primary: #028ab3;
+  --cs-select-secondary: #026685;
+}
+
+.theme-dark {
+  --bg-primary-color: hsla(240, 5%, 7%, 1);
+  --bg-secondary-color: hsla(240, 6%, 17%, 1);
+  --button-select-color: hsla(195, 74%, 15%, 1);
+  --number-color: hsla(0, 0%, 100%, 1);
+
+  --svg-path-color: hsla(240, 7%, 78%, 1);
+  --svg-path-select-color: hsla(0, 0%, 100%, 1);
+
+  --cs-primary: #232327;
+  --cs-secondary: #2f2f35;
+
+  --cs-select-primary: #0c3c4c;
+  --cs-select-secondary: #092c38;
+
+}
+
+body {
+  background-color: var(--bg-primary-color);
+}
+
+header {
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  top: 9.2rem;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(1rem, 10vw, 19rem);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.play svg path, 
+.stop svg path,
+.addfive svg path,
+.removefive svg path {
+  fill: var(--svg-path-color);
+}
+
+button svg {
+  width: clamp(4.8rem, 2rem + 12vw, 4.8rem);
+}
+
+button.hide {
+  display: none;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#controls .timer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12rem;
+  line-height: 14.8rem;
+  text-align: center;
+  color: var(--number-color);
+  cursor: default;
+
+  display: flex;
+}
+
+#controls .buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  transition: 1s;
+}
+
+#controls button svg path {
+  fill: var(--svg-path-color);
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+  transition: 1s;
+}
+
+#cards .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+#cards .card button {
+  width: 13.8rem;
+  height: 15.2rem;
+  border-radius: 2.4rem;
+  cursor: pointer;
+  background: var(--bg-secondary-color);
+  box-shadow: 7px 7px 14px var(--cs-primary), -7px -7px 14px var(--cs-secondary);
+  transition: 1s;
+}
+
+#cards .card path {
+  fill: var(--svg-path-color);
+}
+
+#cards button.select {
+  background: var(--button-select-color);
+  box-shadow: 7px 7px 14px var(--cs-select-primary), -7px -7px 14px var(--cs-select-secondary);
+}
+
+.select path {
+  fill: var( --svg-path-select-color);
+}
+
+#cards .card input {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  width: 9rem;
+}
+
+#cards .card input[type='range'] {
+  -webkit-appearance: none;
+  width: 9rem;
+  height: 6px;
+  background: var(--svg-path-color);
+  border-radius: 9999px;
+  position: relative;
+  bottom: 3.2rem;
+}
+
+#cards .card.select input[type='range'] {
+  background: var(--svg-path-select-color);
+}
+
+#cards .card input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: var(--svg-path-color);
+}
+
+#cards .card.select input[type='range']::-webkit-slider-thumb {
+  background: var(--svg-path-select-color);
+}
+
+@media only screen and (min-width: 698px) {
+  main {
+    flex-direction: row;
+  }
+}
