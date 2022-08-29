@@ -143,7 +143,7 @@ main {
   animation: top-down 0.5s ease 0.4s backwards;
 }
 
-#paleta2, #picole2 {
+#palette2, #popsicle2 {
   display:none;
 }
 
@@ -291,23 +291,23 @@ footer {
     gap: 3.2rem;
     text-align: center;
     grid-template-areas:
-      "paleta shake paleta2"
-      "picole shake picole2"
-      "picole massa picole2"
+      "palette shake palette2"
+      "popsicle shake popsicle2"
+      "popsicle ice-cream popsicle2"
       "footer footer footer";
 
       margin: 5rem 0 5rem 9.8rem;
    }
 
-   #paleta { grid-area: paleta; }
-   #paleta2 { grid-area: paleta2; }
+   #palette { grid-area: palette; }
+   #palette2 { grid-area: palette2; }
    #shake { grid-area: shake; }
-   #massa { grid-area: massa; }
-   #picole { grid-area: picole; }
-   #picole2 { grid-area: picole2; }
+   #ice-cream { grid-area: ice-cream; }
+   #popsicle { grid-area: popsicle; }
+   #popsicle2 { grid-area: popsicle2; }
    #footer { grid-area: footer; }
 
-   #paleta2, #picole2 {
+   #palette2, #popsicle2 {
     display:block;
   }
 

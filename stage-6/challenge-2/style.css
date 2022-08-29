@@ -113,6 +113,11 @@ table th {
   background: #092D38;
   text-align: left;
   padding: 1.6rem;
+
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  
 }
 
 table th:first-child {

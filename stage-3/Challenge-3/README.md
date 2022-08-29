@@ -1,28 +1,21 @@
 
-# Grid com animações 💜
+# Grid with animations 💜
 
-## 💻 Sobre o desafio
-Bora colocar em prática tudo o que foi visto nessa terceira fase! 😍
-A ideia agora é criar o **Space Cream** na versão Desktop! 🚀
+## 💻 About the challenge
+Let's put into practice everything that was seen in this third phase! 😍
+The idea now is to create the **Space Cream** in the Desktop version! 🚀
 
-Aqui está o [**link**](https://www.figma.com/file/pddZCuQIRLjk5dEHQ4L4YR/Stage-03---Grid-com-anima%C3%A7%C3%B5es/duplicate) com o layout da aplicação. Ele abrirá um arquivo igual a imagem abaixo:
+  Here is the [**link**](https://www.figma.com/file/pddZCuQIRLjk5dEHQ4L4YR/Stage-03---Grid-com-anima%C3%A7%C3%B5es/duplicate) with the layout of the application. It will open a file like the image below:
 
 [https://www.figma.com/embed?embed_host=notion&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FpddZCuQIRLjk5dEHQ4L4YR%2FStage-03---Grid-com-anima%25C3%25A7%25C3%25B5es%3Fnode-id%3D0%253A1](https://www.figma.com/embed?embed_host=notion&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FpddZCuQIRLjk5dEHQ4L4YR%2FStage-03---Grid-com-anima%25C3%25A7%25C3%25B5es%3Fnode-id%3D0%253A1)
 
-Se atente ao conteúdo que foi passado na aula. Portanto, **nesse** desafio, lembre-se de usar:
+Pay attention to the content that was taught in class. So **in this** challenge, remember to use:
 
 - Grid;
-- Animações e transições, como visto em aula;
+- Animations and transitions, as seen in class;
 - Media queries.
 
-**Obs:** Você pode usar o desafio anterior como base. Não tem necessidade de criar um novo arquivo para esse desafio. Belezinha? 
-Como você pode ver, na versão Desktop tem um **footer** e na versão mobile, não. 
-E aí? Como será que podemos controlar isso, hein? 👀
-Topa encarar esse desafio?  **💜**
-
-Lembrando: tente se desafiar mas, caso apareça alguma dificuldade, você pode ir no nosso **[fórum](https://app.rocketseat.com.br/h/forum/explorer)** e deixar sua dúvida por lá!
-
-Boa sorte e boooooora codar! **🚀**
+Good luck and let's code! **🚀**
 
 ## Tags
 [![html](https://camo.githubusercontent.com/fb8d8c63bd6142333a82e82c2e255f2cbdeb008bf56c96464ded3c032c0032a6/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f48746d6c352d3035313232413f7374796c653d666c6174266c6f676f3d68746d6c35)](https://developer.mozilla.org/en-US/docs/Web/HTML)
