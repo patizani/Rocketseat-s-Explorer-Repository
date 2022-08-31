@@ -10,7 +10,7 @@ const routes = require("./routes");
 const app = express();
 app.use(express.json());
 
-app.use(routes); //A aplicação deve usar essas rotas.
+app.use(routes); 
 
 database();
 
