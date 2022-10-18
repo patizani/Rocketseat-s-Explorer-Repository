@@ -1,30 +1,41 @@
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../../hooks/auth';
+import { api } from '../../services/api';
 import { Container, Search, User, Profile } from "./styles";
-import { Input } from "../../components/Input";
+
+import avatarPlaceHolder from '../../assets/avatar_placeholder.svg';
 // import { Button } from "../../components/Button";
 
-export function Header(){
+export function Header({ children }){
+  const { signOut, user } = useAuth();
+  const avatarURL = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceHolder;
+  const navigate = useNavigate();
+
+  function handleSignOut(){
+    navigate("/");
+    signOut();
+  }
+
   return(
     <Container>
 
       <h1>
         RocketMovies
       </h1>
+      {children}
       
-      <Search>
-        <Input placeholder="Pesquisar pelo título" />
-      </Search>
-       
-      <Profile to="/profile">
+      <div>
         <User>
-          <strong> Patrícia Zanirati </strong>
-            <span> <a href='/'>  Sair </a> </span>
+          <strong> {user.name} </strong>
+          <span> <a href='/' onClick={handleSignOut}>  Sair </a> </span>
         </User>
-
-        <img
-          src="https://github.com/patizani.png"
-          alt="Foto do usuário"
-        />
-      </Profile>
+        <Profile to="/profile">
+          <img
+            src={avatarURL}
+            alt={user.name}
+          />
+         </Profile>
+      </div>
 
         
     </Container>

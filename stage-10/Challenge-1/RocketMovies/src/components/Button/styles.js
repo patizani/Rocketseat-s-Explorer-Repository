@@ -19,7 +19,7 @@ export const Container = styled.button`
     &:disabled{
         opacity: 0.5;
         cursor: context-menu;
-    }
+    };
     > svg{
         height: 26px;
         width: auto;

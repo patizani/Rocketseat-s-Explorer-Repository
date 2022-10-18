@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Container = styled.header`
     grid-area: header;
 
-    height: 116px;
+    height: 105px;
     width: 100%;
 
     border-bottom-width: 1px;
@@ -22,14 +22,19 @@ export const Container = styled.header`
         line-height: 32px;
         color: ${({ theme }) => theme.COLORS.PINK};
     }
+
+    div {
+        display: flex;
+    }
 `;
 
 export const Search = styled.div`
-    width: 630px;
+    /* width: 630px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 64px;
+    padding: 0 64px; */
+    width: 60%;
 `;
 
 export const User = styled.div`
@@ -38,13 +43,13 @@ export const User = styled.div`
     align-self: center;
     text-align: right;
     margin-right: 16px;
-    line-height: 19px;
+    line-height: 24px;
     span {
         font-size: 14px;
         color: ${({ theme }) => theme.COLORS.GRAY_300};
     }
     strong {
-        font-size: 14px;
+        font-size: 18px;
         color: ${({ theme }) => theme.COLORS.WHITE};
     }
     a {

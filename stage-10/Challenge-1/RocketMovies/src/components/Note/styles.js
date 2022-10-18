@@ -15,14 +15,14 @@ export const Container = styled.button`
         color: ${({ theme }) => theme.COLORS.WHITE};
     }
 
-    /* > h1 {
+    > h1 {
         flex: 1;
         text-align: left;
         font-weight: 700;
         font-size: 24px;
         color: ${({ theme }) => theme.COLORS.WHITE};
 
-    } */
+    }
     > h2 {
         flex: 1;
         text-align: left;

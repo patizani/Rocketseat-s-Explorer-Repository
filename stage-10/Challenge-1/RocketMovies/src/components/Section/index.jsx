@@ -1,5 +1,6 @@
 import { Container } from './styles';
 import { Button } from "../Button";
+import { Link } from 'react-router-dom'
 
 export function Section({ title, children }) {
   return (
@@ -7,9 +8,9 @@ export function Section({ title, children }) {
       <h2>{title}</h2>
       {children}
 
-      <a href="new">
+      <Link to='/new'>
         <Button title="Adicionar Filme" add > </Button>
-      </a>
+      </Link>
     </Container>
   )
 };
